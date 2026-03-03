@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio Page</title>
+    <title>Andrew Dron | Projects</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="portfolio.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary site-nav">
       <div class="container-fluid">
           <ul class="nav">
               <li class="nav-item">
@@ -23,115 +23,62 @@
             </ul>   
       </div>
     </nav>
-    <div id="projects">
-      <table>
-        <tbody>
-          <tr>
-            <td>
-              <h1>Personal and School Projects</h1>
-            </td>
-            <td>
-              <p style="font-weight: bold;">Some of my favorite / more relevant projects I have worked on throughout my time as a developer.</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p style="font-weight: bold;">Privacy Preserving Image Greyscaler</p>
-            </td>
-            <td>
-              <div id="ppg_project">
-                <p>
-                  CPA secure client/server project that allows for server side grayscaling of images encrypted using the CKKS homomorphic encryption algorithm
-                  Client reads image files into rgb channel chunks and converts them into encrypted polynomials.
-                  Server performs grayscaling using averaging method on encrypted channel chunks
-                </p>
-                <br>
-                <a href="https://github.com/Andrew-Dron27/Privacy-Preserving-Image-Grayscaler">Github</a>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p style="font-weight: bold;">OpenPLC Fuzzing Instrumentation</p>
-            </td>
-            <td>
-              <div id="ppg_project">
-                <p>
-                  Forked OpenPLC runtime project to allow for fuzzing instrumentation of binaries generated from structured text files written for programming logic controllers
-                  Swapped g++ compiler with AFL++ instrumented clang compiler
-                  Created custom fuzzing harness that overwrites plc data with binary data read from a file                  
-                </p>
-                <br>
-                <a href="https://github.com/Andrew-Dron27/OpenPLC_v3_Fuzz>Code">Github</a>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p style="font-weight: bold;">Chess App</p>
-            </td>
-            <td>
-              <div id="chess_project">
-                <p>
-                  Work in progress that has stalled since I returned to school. This is a basic chess app written with a front end in React and 
-                  a backend in Java. Currently I am working on setting up the server, as well as calculating checkmate.
-                </p>
-                <br>
-                <a href="https://github.com/Andrew-Dron27/Chess">Github</a>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p style="font-weight: bold;">Sudoku</p>
-            </td>
-            <td>
-              <div id="sudoku_project">
-                <p>
-                  Basic sudoku app written in react. The app utilizes a backtracking algorithm to solve and generate new puzzles
-                  of varying difficulty
-                </p>
-                <br>
-                <a href="https://github.com/Andrew-Dron27/Sudoku">Github</a>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p style="font-weight: bold;">Learning Outcome Tracker</p>
-            </td>
-            <td>
-              <div id="web_project">
-                <p>Learning Outcome Tracker</p>
-                <p>
-                  Web app written for my software development course with Caleb Edwards, 
-                  the app is similar to Canvas which would let teachers
-                  track the learning outcomes of various students.
-                </p>
-                <br>
-                <a href="https://github.com/Andrew-Dron27/Learning_Outcomes">Github</a>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p style="font-weight: bold;">Memory Allocator</p>
-            </td>
-            <td>
-              <div id="malloc_projects">
-                <p>Memory Allocator</p>
-                <p>
-                  Dynamic memory allocator written for my computer systems course. Manages user request heap memory blocks
-                  with optimizations for both speed and efficiency of memory space used.
-                </p>
-                <br>
-                <a href="https://github.com/Andrew-Dron27/Allocator">Github</a>
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    <main class="page-wrap">
+      <section>
+        <h1 class="section-title">Personal and School Projects</h1>
+        <p class="section-intro">A few relevant projects from school and professional learning.</p>
+
+        <div class="project-list">
+          <article class="project-card">
+            <h3>Privacy Preserving Image Grayscaler</h3>
+            <p>
+              CPA-secure client/server project for server-side grayscaling of CKKS-encrypted images. The client chunks RGB channels into encrypted polynomials, and the server performs averaging-based grayscale on encrypted channel chunks.
+            </p>
+            <a href="https://github.com/Andrew-Dron27/Privacy-Preserving-Image-Grayscaler">View on GitHub</a>
+          </article>
+
+          <article class="project-card">
+            <h3>OpenPLC Fuzzing Instrumentation</h3>
+            <p>
+              Forked OpenPLC runtime to support fuzzing instrumentation for PLC binaries generated from structured text. Replaced g++ with AFL++ instrumented clang and built a custom harness that overwrites PLC data with file-based binary input.
+            </p>
+            <a href="https://github.com/Andrew-Dron27/OpenPLC_v3_Fuzz">View on GitHub</a>
+          </article>
+
+          <article class="project-card">
+            <h3>Chess App</h3>
+            <p>
+              Work-in-progress chess app with a React frontend and Java backend. Current focus is server setup and checkmate calculation.
+            </p>
+            <a href="https://github.com/Andrew-Dron27/Chess">View on GitHub</a>
+          </article>
+
+          <article class="project-card">
+            <h3>Sudoku</h3>
+            <p>
+              React-based Sudoku app using a backtracking algorithm to solve puzzles and generate boards of varying difficulty.
+            </p>
+            <a href="https://github.com/Andrew-Dron27/Sudoku">View on GitHub</a>
+          </article>
+
+          <article class="project-card">
+            <h3>Learning Outcome Tracker</h3>
+            <p>
+              Course project web app similar to Canvas that helps teachers track student learning outcomes.
+            </p>
+            <a href="https://github.com/Andrew-Dron27/Learning_Outcomes">View on GitHub</a>
+          </article>
+
+          <article class="project-card">
+            <h3>Memory Allocator</h3>
+            <p>
+              Dynamic memory allocator for a computer systems course that manages heap block requests with optimizations for speed and memory efficiency.
+            </p>
+            <a href="https://github.com/Andrew-Dron27/Allocator">View on GitHub</a>
+          </article>
+        </div>
+      </section>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   </body>
 </html>

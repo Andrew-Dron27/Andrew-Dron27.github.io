@@ -3,18 +3,19 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio Page</title>
+    <title>Andrew Dron | About</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="portfolio.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary site-nav">
       <div class="container-fluid">
           <ul class="nav">
               <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="portfolio.html">Portfolio</a>
+                  <a class="nav-link" href="portfolio.html">Projects</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="https://github.com/Andrew-Dron27">Github</a>
@@ -22,55 +23,37 @@
             </ul>   
       </div>
     </nav>
-    <Table width="1200">
-      <Tbody>
-        <tr>
-          <h1>About me</h1>
-        </tr>
-        <tr>
-          <td>
-            <div class="picture">
-              <img src="ghent.jpg" width="450" height="400" />
+    <main class="page-wrap">
+      <section class="hero">
+        <div class="hero-grid">
+          <div>
+            <img src="ghent.jpg" class="profile-image" alt="Andrew cycling in Ghent">
+          </div>
+          <div>
+            <h1 class="section-title">About me</h1>
+            <p class="section-intro">Background, experience, and what drives me as an engineer.</p>
+
+            <div class="card">
+              <p>
+                I am 28 years old and graduated from the University of Utah in 2020 with a bachelor’s in computer science, with a specialization in systems engineering. I have 4 years of professional experience in tech: 3 years as an intern at Becton Dickinson and 1 year as a software engineer at Sorenson Communications. My work has focused on user-facing products ranging from ultrasound needle-tracking devices to web video services for sign language relay interpreters.
+              </p>
+              <p>
+                My strongest stack includes C#, JavaScript/TypeScript, React, Flutter, and C++. In my free time I study Rust because its compiler rules allow performance with strong safety guarantees.
+              </p>
             </div>
-          <td></td>
-          <td>
-            <div id="about">
-              <hr/>
+
+            <div class="card">
               <p>
-                I am 25 years old and graduated from the University of Utah in 2020 with a bachelors in Computer Science with a specializtion
-                in systems engineering.
-                I have 4 years of professional work experience in the tech industry with 3 years as an intern working at Becton Dickinson,
-                and 1 year as a software engineer at Sorenson Communications.
-                My main experience is in developing user facing products that range from ultrasound needle tracking devices to web video 
-                services for sign language relay interpreters.
-                I have most experience in C#, javascript and typescript, react, flutter, and C++
-                Currently in my free time I am studying the language Rust. It may not be as ubiquitous in industry
-                as Python or Go but Rust's robust compiler rules add the ability to write performant code that is programmatically safe.
+                Last year I resigned from my full-time role at Sorenson to pursue an adventure cycling across Norway with my cousin. We completed around 3 weeks of bikepacking, and I then spent two months backpacking through Europe. It was the adventure of a lifetime, and it strengthened teamwork and communication skills in ways that are hard to replicate in an office.
               </p>
-              <hr/>
               <p>
-                Last year I resigned from my full time position
-                at Sorenson to pursue and adventurous opportunity to cycle across Norway with my cousin. We did about 3 weeks of bikepacking,
-                and I spent the next 2 months backpacking through Europe. It was truly the adventure of a lifetime, and I do not regret 
-                my decision for a moment. I taught me the type of social and teamworking skills that cannot be learned behind a desk.
+                I am confident in my ability to contribute as a software engineer. I performed strongly academically while balancing internship work, and my travel experiences broadened my perspective and improved both technical and interpersonal problem-solving.
               </p>
-              <hr/>
-              <p>
-                I am confident in my abilites to perform as a software engineer in industry. I consistently received grades
-                at the top of my class and worked as an intern while going to school. I was and still am unhappy that I had to leave
-                my position at Sorenson after only a year since I felt I still had much to learn there. However, my travels have left me 
-                given me a much broader perspective on life and the world
-                and have left me better to not only deal with the technical side of software development, but also the people and communication side.
-                I am more assured in my abilites to assist in the creation of complex programs and solving difficult
-                problems than ever.
-              </p>
-              <hr/>
-            </div>           
-          </td>
-          </td>
-        </tr>
-      </Tbody>
-    </Table>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   </body>
